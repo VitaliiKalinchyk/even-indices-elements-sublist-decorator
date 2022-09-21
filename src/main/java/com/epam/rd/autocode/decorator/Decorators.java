@@ -1,9 +1,10 @@
 package com.epam.rd.autocode.decorator;
 
-import java.util.List;
+import java.util.*;
 
-public class Decorators {
+public class Decorators extends ArrayList<String> {
+
     public static List<String> evenIndexElementsSubList(List<String> sourceList) {
-        throw new UnsupportedOperationException();
+        return new DecoratorList(sourceList);
     }
 }
