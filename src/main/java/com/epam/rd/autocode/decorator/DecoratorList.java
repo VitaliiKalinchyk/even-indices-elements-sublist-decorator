@@ -32,9 +32,7 @@ public class DecoratorList extends AbstractList<String> {
 
             @Override
             public String next() {
-                String result = get(cursor);
-                cursor = cursor + 1;
-                return result;
+                return get(cursor++);
             }
         };
     }
